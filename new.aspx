@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="new.aspx.vb" Inherits="Default2" %>
 
 <!DOCTYPE html>
 
@@ -41,22 +41,21 @@
         </asp:SqlDataSource>
     
     </div>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Recipe_ID" DataSourceID="SqlDataSource1">
-            <Columns>
-                <asp:BoundField DataField="Recipe_Name" HeaderText="Recipe Name" SortExpression="Recipe_Name" />
-                <asp:BoundField DataField="Sumbmitter" HeaderText="Sumbmitted By " SortExpression="Sumbmitter" />
-                <asp:BoundField DataField="Ingredient1" HeaderText="Ingredient #1" SortExpression="Ingredient1" />
-                <asp:BoundField DataField="Ingredient2" HeaderText="Ingredient #2" SortExpression="Ingredient2" />
-                <asp:BoundField DataField="Ingredient3" HeaderText="Ingredient #3" SortExpression="Ingredient3" />
-                <asp:BoundField DataField="Ingredient4" HeaderText="Ingredient #4" SortExpression="Ingredient4" />
-                <asp:BoundField DataField="Ingredient5" HeaderText="Ingredient #5" SortExpression="Ingredient5" />
+        <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="Recipe_ID" DataSourceID="SqlDataSource1" DefaultMode="Insert" Height="50px" Width="125px">
+            <Fields>
+                <asp:BoundField DataField="Recipe_ID" HeaderText="Recipe_ID" ReadOnly="True" SortExpression="Recipe_ID" />
+                <asp:BoundField DataField="Recipe_Name" HeaderText="Recipe_Name" SortExpression="Recipe_Name" />
+                <asp:BoundField DataField="Sumbmitter" HeaderText="Sumbmitter" SortExpression="Sumbmitter" />
+                <asp:BoundField DataField="Ingredient1" HeaderText="Ingredient1" SortExpression="Ingredient1" />
+                <asp:BoundField DataField="Ingredient2" HeaderText="Ingredient2" SortExpression="Ingredient2" />
+                <asp:BoundField DataField="Ingredient3" HeaderText="Ingredient3" SortExpression="Ingredient3" />
+                <asp:BoundField DataField="Ingredient4" HeaderText="Ingredient4" SortExpression="Ingredient4" />
+                <asp:BoundField DataField="Ingredient5" HeaderText="Ingredient5" SortExpression="Ingredient5" />
                 <asp:BoundField DataField="Preperation" HeaderText="Preperation" SortExpression="Preperation" />
                 <asp:BoundField DataField="Notes" HeaderText="Notes" SortExpression="Notes" />
-            </Columns>
-        </asp:GridView>
-        <p dir="ltr">
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/new.aspx">New Recipe</asp:HyperLink>
-        </p>
+                <asp:CommandField ShowInsertButton="True" />
+            </Fields>
+        </asp:DetailsView>
     </form>
 </body>
 </html>
