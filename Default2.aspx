@@ -13,13 +13,13 @@
 
         <h2> Using 5 ingridents or Less!</h2>
     
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Default.aspx">Home</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Default.aspx">Home  </asp:HyperLink>
     
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default2.aspx">Insert Recipe</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Default2.aspx">Insert Recipe  </asp:HyperLink>
     
         
-        <asp:HyperLink ID="HyperLink3" runat="server">About Us</asp:HyperLink>
-        <asp:HyperLink ID="HyperLink4" runat="server">Contact</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Default5.aspx">About Us  </asp:HyperLink>
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/default4.aspx">Contact  </asp:HyperLink>
         
         <div>
     
