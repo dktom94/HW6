@@ -5,11 +5,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head runat="server">
-    <title>Web Contact Form</title>
+    <title>Contact US </title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
 </head>
 
 <body>
 
+
+    <div class =" header">
     <h1> Wicked Easy Recipes</h1>
 
         <h2> Using 5 ingridents or Less!</h2>
@@ -22,7 +25,7 @@
         <asp:HyperLink ID="HyperLink3" runat="server" ClientIDMode="Static" NavigateUrl="~/Default5.aspx">About Us  </asp:HyperLink>
         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/default4.aspx">Contact  </asp:HyperLink>
     
-
+    </div>
     <form id="form1" runat="server">
 
         <!-- Check to see if you are in postback.  If not, display the contact form. -->

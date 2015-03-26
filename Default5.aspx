@@ -4,10 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
 </head>
 <body>
 
+
+    <div class =" header">
     <h1> Wicked Easy Recipes</h1>
 
         <h2> Using 5 ingridents or Less!</h2>
@@ -20,10 +23,10 @@
         <asp:HyperLink ID="HyperLink3" runat="server" ClientIDMode="Static" NavigateUrl="~/Default5.aspx">About Us</asp:HyperLink>
         <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/default4.aspx">Contact</asp:HyperLink>
     
-
+    </div>
     <h3> About Us </h3>
 
-    <b1> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
 aliquet, tellus sit amet feugiat euismod, velit lectus
 pellentesque nisi, non eleifend quam ipsum at arcu. Sed
 semper mi a tristique porttitor. Morbi rhoncus diam dui, a
@@ -40,7 +43,8 @@ nulla, suscipit ut urna ac, facilisis elementum sapien. Interdum
 et malesuada fames ac ante ipsum primis in faucibus. Ut dui
 quam, imperdiet ornare est non, accumsan vulputate justo.
 Vestibulum sit amet erat a nunc consectetur pellentesque.
-Aenean imperdiet tellus nec augue eleifend condimentum.</b1>
+Aenean imperdiet tellus nec augue eleifend condimentum.
+</p>
 
 
     <form id="form1" runat="server">
